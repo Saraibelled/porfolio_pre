@@ -1,0 +1,160 @@
+body {
+      background-color: #ffffff;
+      margin:0px;
+      padding: 0px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+}
+
+/** NAVEGADOR **/
+
+/**--Adaptación de https://programadorwebvalencia.com/menu-responsive-design-con-boton-hamburguesa/--------**/
+
+.header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0);
+      box-sizing: border-box;
+      padding: 25px;
+      font-family: 'Lato', sans-serif;
+      font-size:40px;
+}
+
+.header__button-nav--close {
+  opacity: 50%;
+  color: #333333;
+  border-width: 0px;
+  background-color: rgba(0, 0, 0, 0.0);
+  font-size: 45px;
+  transition: 0.5s;
+  text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+
+}
+
+.header__button-nav--close:hover {
+      opacity: 1.0;
+  }
+
+    /* TEXTO TITULAR */
+
+.cronologia {
+    background-color: #ffffff;
+    position: static;
+    box-sizing: border-box;
+    padding-top: 90px;
+    padding-bottom: 35px;
+    min-height: 100vh; /* Para que tenga al menos el tamaño de de la pantalla */
+}
+
+.cronologia .parrafo {
+    font-family: 'Prata', serif;
+    font-size:50px;
+    font-weight: 400;
+    color: #333333;
+    margin: auto;
+    max-width: 624px;
+    box-sizing: border-box;
+    padding: 50px 20px 35px 20px;
+    text-align: center !important;
+}
+
+
+    /* contacto */
+
+.contacto {
+    background-color: #F2583E;
+    position: static;
+    box-sizing: border-box;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    height: auto;
+    min-height: 750px;
+}
+
+.contacto .parrafo {
+    font-family: 'Prata', serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: #ffffff;
+    box-sizing: border-box;
+    padding-bottom: 10%;
+    max-width: 624px;
+    margin: auto;
+    text-align: center !important;
+}
+
+
+
+    /* CAJA MAIL */
+
+.cajamail a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #FFDE00;
+}
+
+.cajamail a:hover {
+    color: #ffffff;
+}
+
+    /* REDES SOCIALES CON FLOAT */
+
+.sticky-container {
+    margin:0px;
+    position: relative;
+    float: left;
+    padding-top: 20px;
+    clear: both;
+}
+
+.sticky li {
+    list-style:none;
+    height:43px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    cursor:pointer;
+}
+
+.sticky li:hover {
+    opacity: 60%;
+}
+
+.sticky li img {
+    margin:5px 4px;
+    margin-right:5px;}
+
+
+/* Final */
+
+.final {
+    background-color: #93E2D5;
+    position:static;
+    box-sizing: border-box;
+    padding: 90px 0px 10px 0px;
+    height: auto;
+  }
+
+  .creditos {
+    font-family: 'Lato', sans-serif;
+    font-size:12px;
+    font-weight: 700;
+    color: #333333;
+    margin-left:5%;
+    margin-right:5%;
+    text-align: center !important;
+}
+
+
+

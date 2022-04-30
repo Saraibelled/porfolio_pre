@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sara I Belled | Porfolio</title>
+        <meta name="description" content="Periodismo visual, innovación y nuevas narrativas">
+        <meta name="robots" content="index,follow">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Sara I Belled">
+        <meta name="twitter:description" content="Periodismo visual, innovación y nuevas narrativas">
+        <meta name="twitter:image" content="https://raw.githubusercontent.com/Saraibelled/porfolio/main/image/salirdelarmario-ilustracion.png">
+        <link rel="stylesheet" type="text/css" media="screen" href="porfolio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Prata&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    </head>
+    <body>
+
+  <div class="contenedor">
+<div class="navegador">
+  <header x-data="{ open: false }" class="header">
+  <div class="header__logo"></div>
+  <button class="header__button-nav--open" x-on:click="open = true">☰</button>
+  <nav class="nav" x-bind:class="open ? 'nav--show' : ''">
+    <!-- Boton cerrar -->
+    <div class="nav__button" x-on:click="open = false">
+      <button class="header__button-nav--close">×</button>
+    </div>
+    <ul class="nav__ul">
+      <li class="nav__item"><a href="#inicio" class="nav__link" x-on:click="open = false">Inicio</a></li>
+       <li class="nav__item"><a href="#historia" class="nav__link" x-on:click="open = false">Historia</a></li>
+      <li class="nav__item"><a href="#digital" class="nav__link" x-on:click="open = false">Digital</a></li>
+      <li class="nav__item"><a href="#papel" class="nav__link" x-on:click="open = false">Papel</a></li>
+      <li class="nav__item"><a href="#cronologia" class="nav__link" x-on:click="open = false">Cronología</a></li>
+      <li class="nav__item"><a href="#contacto" class="nav__link" x-on:click="open = false">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+</div>
+
+
+<div class="inicio" id="inicio">
+<h1>Sara I Belled</h1>
+<h3>Periodista visual <span style="color:#FFFFFF">Porfolio</span></h3>
+</div>
+
+<div class="triangulo arriba">
+  <div></div>
+</div>
+
+<div class="historia" id="historia"><p class="parrafo">¡Hola! Soy Sara y soy periodista visual. Me gusta <span class="mark">contar historias</span> y estoy convencida de que en muy pocas ocasiones existe una única manera de hacerlo.
+<br><br>
+Trabajo en la <b>Agencia Colpisa</b>, la redacción central de los diarios de Vocento, y me especializo en <span class="mark">innovación y nuevas narrativas</span>.
+</p>
+</div>
+
+<div class=digital id="digital">
+<p class="parrafo">En los últimos años he ideado y elaborado piezas visuales como estas, algunas de ellas en equipo:</p>
+<ul class="trabajos">
+<li class="trabajo">
+<p class="antetitulo">GUERRA UCRANIA</p>
+  <a target="_blank" href="https://www.diariovasco.com/internacional/devastacion-ciudades-mapa-guerra-ucrania-20220408145008-ntrc.html">
+          <div class="imagen"><img src="https://static.diariovasco.com/www/multimedia/202204/08/media/foto-mapas-ucra-n-7502.jpg" width="230px" height="230px" ></div>
+          <p class="titular">La devastación en Irpin, Gostomel o Bucha: la mitad de los edificios destruidos</p> 
+          <p class="fecha">09/04/2022</p>    
+  </a>
+</li>
+<li class="trabajo">
+<p class="antetitulo" style="color:#ffffff">ESPECIAL MULTIMEDIA | CIENCIA</p>
+  <a target="_blank" href="https://www.elcorreo.com/ciencia/espacio/marte-unico-planeta-habitado-robots-20220331123623-ntrc.html">
+          <div class="imagen"><div class="polig50"></div>
+          <img src="image/espacial-marte.gif" width="230px" height=""></div>
+          <div class="polig55"></div>
+          <p class="titular" style="color:#FFFFFF">Así es y así suena Marte,<br> el planeta que quiere <br>conquistar el hombre</p>
+          <p class="fecha" style="color:#FFFFFF">02/04/2022</p>    
+  </a>
+</li>
+<li class="trabajo">
+<p class="antetitulo">INFOGRAFÍA | CIENCIA</p>
+  <a target="_blank" href="https://www.elcorreo.com/ciencia/vida/antartida-20220320211746-ntrc.html">
+          <div class="imagen"><img src="image/pinguino.jpg" width="230px" height="230px" ></div>
+          <p class="titular">Dos científicos vascos <br>a la caza de superplantas <br>en la Antártida</p> 
+          <p class="fecha">21/03/2022</p>    
+  </a>
+</li>
+<li class="trabajo">
+  <p class="antetitulo">SONIFICACIÓN | COVID</p>
+  <a target="_blank" href="https://www.elcorreo.com/sociedad/salud/coronavirus-graficos/pandemia-coronavirus-sonido-uci-hospitales-espana-20220217132451-ntrc.html">
+          <div class="imagen"><img src="image/sonificacion-datos-covid.jpg" width="230px" height="230px" ></div>
+          <p class="titular">¿Se puede escuchar una pandemia? Así suenan las olas de covid dentro de las UCI</p>
+          <p class="fecha">17/02/2022</p>    
+  </a>
+</li>
+<li class="trabajo">
+  <p class="antetitulo">CALCULADORA VACUNACIÓN | COVID</p>
+  <a target="_blank" href="https://twitter.com/saraibelled/status/1464225028841558020?s=20&t=lkCCxgUlpMuztjmIdnH4Dg">
+            <div class="imagen"><img src="image/calculadora-vacunacion.jpg" width="230px" height="230px" ></div>
+            <p class="titular">Calcula cuándo llegaremos al 70% de la población vacunada con el ritmo actual</p>
+            <p class="fecha">31/08/2021</p>    
+  </a>
+
+</li>
+<li class="trabajo">
+<p class="antetitulo">REPORTAJE | COVID</p>
+  <a target="_blank" href="https://www.diariovasco.com/sociedad/salud/relato-anticipado-cena-20201218124905-ntrc.html">
+            <div class="imagen"><img src="image/consejos-nochebuena-2020-2021.jpg" width="230px" height="230px" ></div>
+            <p class="titular">Relato anticipado <br>de una cena <br>de Nochebuena</p>
+            <p class="fecha">18/12/2020</p>    
+  </a>
+</li>
+<li class="trabajo">
+<p class="antetitulo">REPORTAJE | COVID</p>
+  <a target="_blank" href="https://www.diariovasco.com/sociedad/salud/coronavirus-graficos/microgotas-enemigo-invisible-20200524165528-ntrc.html">
+            <div class="imagen"><img src="image/microgotas.jpg" width="230px" height="230px" ></div>
+            <p class="titular">Microgotas, el <br>enemigo invisible <br><br></p>
+            <p class="fecha">24/05/2020</p>    
+  </a>
+</li>
+<li class="trabajo">
+<p class="antetitulo">ELECCIONES EE UU</p>
+  <a target="_blank" href="https://www.diariovasco.com/elecciones/eeuu/voto-correo-anticipado-20201030173628-ntrc.html">
+            <div class="imagen"><img src="https://static3.elnortedecastilla.es/www/multimedia/202010/29/media/fotoleads_votoporcorreo_750.jpg" width="230px" height="230px" ></div>
+            <p class="titular">El voto por correo rompe las barreras del coronavirus en las elecciones de EE UU</p>
+            <p class="fecha">30/10/2020</p>    
+  </a>
+</li>
+<li class="trabajo">
+<p class="antetitulo">REPORTAJE | DEPORTES</p>
+  <a target="_blank" href="https://www.elcorreo.com/deportes/juegos-olimpicos/ballet-esqui-acro-deporte-invierno-20220220213238-ntrc.html">
+          <div class="imagen"><img src="image/ballet-de-esqui.jpg" width="230px" height="230px" ></div>
+          <p class="titular">Ballet de esquí, la <br>bella disciplina perdida<br> que revive en internet</p>    
+          <p class="fecha">20/02/2022</p>    
+  </a>
+</li>
+
+<li class="trabajo">
+  <p class="antetitulo" style="color: #fff; background-color: #F2583E;">SERIE JUEGOS OLÍMPICOS</p>
+  <a target="_blank" href="https://www.elcorreo.com/deportes/juegos-olimpicos/historias/lista-todos-olimpicos-espanoles-20210718204857-ntrc.html">
+          <div class="imagen"><img src="https://static1.elcorreo.com/www/multimedia/202107/17/media/fotolead_2500_750x750.jpg" width="230px" height="230px" ></div>
+          <p class="titular">Los 2.500 olímpicos de verano, más o menos, que ha tenido España</p> 
+          <p class="fecha">19/07/2022</p>    
+  </a>
+</li>
+
+<li class="trabajo">
+  <p class="antetitulo" style="color: #fff; background-color: #F2583E">SERIE JUEGOS OLÍMPICOS</p>
+  <a target="_blank" href="https://www.elcorreo.com/deportes/juegos-olimpicos/en-datos/edad-olimpicos-espanoles-20210724164246-ntrc.html">
+          <div class="imagen"><img src="https://static3.elcorreo.com/www/multimedia/202107/23/media/fotolead_datosedad_750x750.jpg" width="230px" height="230px" ></div>
+          <p class="titular">Gimnastas olímpicas <br>a los 17 años y jinetes <br>rozando los 40</p>
+          <p class="fecha">24/07/2022</p>    
+  </a>
+</li>
+<li class="trabajo">
+  <p class="antetitulo" style="color: #fff; background-color: #F2583E">SERIE JUEGOS OLÍMPICOS</p>
+  <a target="_blank" href="https://www.elcorreo.com/deportes/juegos-olimpicos/historias/tirador-fantasma-tokio-20210807142546-ntrc.html">
+            <div class="imagen"><img src="https://static3.elcorreo.com/www/multimedia/202108/06/media/tiradorfantasma_fotolead_750x750.jpg" width="230px" height="230px" ></div>
+            <p class="titular">Un tirador fantasma <br>en Tokio<br><br></p>
+            <p class="fecha">07/08/2021</p>    
+  </a>
+</li>
+</ul>
+</div>
+
+<div class="papel" id="papel">
+<p class="parrafo">Y, por si te lo preguntabas: sí, también soy una enamorada del papel... </p>
+<div class="galeriapapel">
+<div class="galeriapapel1">
+<img class="breakpoint" src="image/ilustracion-papel-agujetas.jpg" width="100%"/>
+<img class="breakpoint" src="image/ilustracion-papel-planchar.png" width="100%"/>
+<img class="breakpoint" src="image/ilustracion-papel-saludables.png" width="100%"/>
+<img class="breakpoint" src="image/ilustracion-papel-huevo.jpg" width="100%"/>
+</div>
+<div class="galeriapapel1">
+<img class="breakpoint" src="image/ilustracion-papel-cuernos.jpg" width="100%"/>
+<img class="breakpoint" src="image/grafico-papel-cronologia.jpg" width="100%"/>
+<img class="breakpoint" src="image/ilustracion-papel-ensalada.jpg" width="100%"/>
+<img class="breakpoint" src="image/ilustracion-papel-cocteles.png" width="100%"/>
+</div>
+<div class="galeriapapel1">
+<img class="breakpoint" src="image/ilustracion-papel-toki.jpg" width="100%"/>
+<img class="breakpoint" src="image/ilustracion-papel-sonidos.jpg" width="100%"/>
+<img class="breakpoint" src="image/ilustracion-papel-ahorrocoche.jpg" width="100%"/>
+<img class="breakpoint" src="image/grafico-papel-sueldos.jpg" width="100%"/>
+</div>
+<div class="galeriapapel1">
+<img class="breakpoint" src="image/ilustracion-papel-casqueria.jpg" width="100%"/>
+<img class="breakpoint" src="image/grafico-papel-letalidad.jpg" width="100%"/>
+<img class="breakpoint" src="image/grafico-papel-mascarillas.jpg" width="100%"/>
+<img class="breakpoint" src="image/ilustracion-papel-despensa.jpg" width="100%"/>
+</div>
+</div>
+</div>
+
+<div class="cronologia" id="cronologia">
+  <p class="parrafo">El papel fue, de hecho, mi cuna y el periodismo de provincias, el mejor escenario para sentar la bases de la profesional que soy ahora.
+<br><br>
+Si quieres, puedes ver <span class="mark"> <a href="cronologia/index.html" style="color:#333333;">aquí</a></span> más de esta historia.</p>  
+</div>
+</div>
+
+<div class="contacto" id="contacto">
+<p class="parrafo">Contacto</p>
+<div class="cajamail" ><a class="mail" href="mailto:saraibelled@gmail.com">saraibelled@gmail.com</a></div>
+ <div class="sticky-container">
+    <ul class="sticky">
+        <li>
+            <a href="https://www.linkedin.com/in/saraibelled-visualjournalist/" target="_blank"><img src="image/imagen-linkedin.png" width="32" height="32"></a>
+        </li>
+        <li>
+            <a href="https://twitter.com/saraibelled" target="_blank"> <img src="image/imagen-twitter.png" width="32" height="32"></a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/belbelled/" target="_blank"><img src="image/imagen-instagram.png" width="32" height="32"></a>
+        </li>
+    </ul>
+</div>
+
+</div>
+
+<div class="final">
+  <div class="imagen"><img src="image/salirdelarmario-ilustracion.png" width="100%" ></div>
+  <p class="creditos">Una página diseñada y desarrollada por Sara I Belled con mucho ♥ | Todas las imágenes están protegidas por sus diferentes derechos de uso</p></div>
+
+</div>
+    </body>
+</html>
